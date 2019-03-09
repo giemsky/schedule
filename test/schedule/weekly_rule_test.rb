@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'test_helper'
+
 describe 'Schedule::WeeklyRule' do
   it 'should raise exception when initialized with invalid values' do
     proc { WdSchedule::Schedule::WeeklyRule.new(monday: 1) }.must_raise Dry::Struct::Error

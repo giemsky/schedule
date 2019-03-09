@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'test_helper'
+
 describe 'TimeTable::Importer' do
   describe '#import' do
     let(:parser) do

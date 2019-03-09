@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'test_helper'
+
 describe 'Schedule' do
   describe '#available_on_weekdays?' do
     describe 'without any rule' do
