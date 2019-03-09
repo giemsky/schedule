@@ -20,7 +20,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### From command-line
+
+	$ wd_schedule doctors.csv -d Monday
+	
+### From code
+
+```ruby
+parser = WdSchedule::Parser::WeeklyCsv.new(filepath)
+importer = WdSchedule::Timetable::Importer.new
+timetable = importer.import(parser)
+searcher = WdSchedule::Timetable::Searcher.new(timetable)
+searcher.find_doctor('Monday')
+
+```
 
 ## Development
 

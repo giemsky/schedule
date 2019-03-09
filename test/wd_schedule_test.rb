@@ -1,11 +1,9 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class WdScheduleTest < Minitest::Test
-  def test_that_it_has_a_version_number
+require 'test_helper'
+
+describe 'WdSchedule' do
+  it 'should have version number' do
     refute_nil ::WdSchedule::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
   end
 end
